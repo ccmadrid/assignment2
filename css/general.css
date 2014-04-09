@@ -22,12 +22,10 @@ html {
     color: #3f4040;
 }
 
-
 body {
     margin: 0;
     padding: 0;
     background-color: #f3f4f4;
-    
 }
 
 header {
@@ -45,11 +43,11 @@ header {
 
 .logo {
     height: 3.5rem;
-    width: auto;
-    margin: 0.75rem 45%;
-    
+    width: 3.5rem
+    position:absolute;
+    display: block;
+    margin: 0.75rem auto;
 }
-
 .nav-btn,
 .nav-btn:link,
 .nav-btn:visited {
@@ -102,43 +100,40 @@ header {
 	text-decoration: none;
 }
 
-.button {
-    background-image: url(../images/return.svg);
-    background-repeat: no-repeat;
-    border-radius: 3rem 0 0 3rem;
-    box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+.rtt {
     width: 70px;
     height: 42px;
     position:fixed;
     bottom: 2rem;
-    right:0;
-}
-
-
-/*
-.button {
-    background-image: url(../images/return.svg);
-    background-position: right;
-    height: 42px;
-    width: 70px;
-    background-repeat: no-repeat;
+    right: 0;
     border-radius: 3rem 0 0 3rem;
     box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: fixed;
-    bottom: 2rem;
-    right: 0;
 }
-*/
-    
-.billboard {
+
+.homebb {
+    background-image: url(../images/billboard.jpg);
+    background-size:110%;
+    background-position: top;
+}
+
+.productsbb{
+    background-image: url(../images/products.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.companybb {
+    background-image: url(../images/studio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.homebb, .productsbb, .companybb, .billboard{
     margin: 3rem 0 1rem;
     padding: 7.5rem 5% 0;
     height: 13rem;
     width: 100%;
-    background-image: url(../images/billboard.jpg);
-    background-size:110%;
-    background-position: top;
+    
     background-repeat: no-repeat;
     font-family: 'Bangers', cursive;
     font-size: 3.75rem;
@@ -181,6 +176,7 @@ h2 {
 }
 */
 
+
 .featured {
     margin: 0 5% 1rem;
     width: 90%;
@@ -212,7 +208,7 @@ h2 {
     display: inline;
     
 }
-.company, .products {
+.v2, .v3, .company, .products {
     width: 42.5%;
     height: 10rem;
     background-position: center;
@@ -264,7 +260,7 @@ footer {
 }
 
 .socialmedia a {
-    display:inline-block;
+    display: inline-block;
     margin: 0.75rem 0;
     height: 3.5rem;
     width: 3.5rem;
@@ -285,12 +281,12 @@ footer {
     background-image: url(../images/twitter.svg);
 }
 
-.google {
-    background-image: url(../images/instagram.svg);
-}
-
 .instagram {
     background-image: url(../images/googleplus.svg);
+}
+
+.google {
+    background-image: url(../images/instagram.svg);
 }
 
 .sitemap {
@@ -306,6 +302,10 @@ footer {
    position: relative;
 }
 
+.sitemap ul{
+    margin:0;
+    padding:0;
+}
 
 .copyright {
     margin: 0;
@@ -316,6 +316,14 @@ footer {
 h3 {
     margin:0 5% 0.5rem;
     font-size: 2rem;
+}
+
+.space{
+    height: 5rem;
+    margin:0.5rem 0;
+    padding:0;
+    background-color: #00bef2;
+    border-radius: 1rem;
 }
 
 .about{
@@ -352,6 +360,13 @@ h3 {
     background-color:#00bef2;
     width: 75%;
     border-radius: 4rem;
+    
+    position: relative;
+    
+}
+
+.employee2 {
+    left:25%;
 }
 
 .employee p, .employee2 p {
@@ -369,10 +384,6 @@ h3 {
     border-radius:5rem;
 }
 
-.employee2 {
-float:right;
-}
-
 .emp1 {
     background-image: url(../images/logo.svg);
 }
@@ -385,6 +396,49 @@ float:right;
     background-image: url(../images/companion.jpg);
 }
 
+.merch {
+    margin: 0 0 1rem;
+    padding: 0;
+}
+.merch li {
+    padding: 5.5rem 0 0
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: white;
+    text-shadow:
+    -2px -2px 0 #FFF,  
+    2px -2px 0 #FFF,
+    -2px 2px 0 #FFF,
+     2px 2px 0 #FFF;
+    border-radius: 1.5rem;
+    display: inline-block;
+}
+
+.v1 {
+margin: 0 5% 1rem;
+    width: 90%;
+    height: 22rem;
+}
+
+.v2 {
+    float:left;
+    margin: 0 0 0 5%;
+    display: inline;
+    width: 42.5%;
+    height: 10rem;
+    background-position: center;
+}
+
+
+.v3{
+    margin: 0 5% 0 5%;
+    background-size: cover;
+    display: inline;
+    width: 42.5%;
+    height: 10rem;
+    background-position: center;
+}
 
 .description {
     margin: 0 5% 1rem;
@@ -397,6 +451,8 @@ float:right;
     font-family: 'Bangers', cursive;
     font-size: 1rem;
 }
+
+
 
     /*
     magenta rgb(228,84,153); #e45499

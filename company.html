@@ -7,28 +7,30 @@
     <link href="css/general.css" rel="stylesheet">
     <link href="images/icon.png" rel="icon">
     <link href='http://fonts.googleapis.com/css?family=Bitter|Bangers' rel='stylesheet' type='text/css'>
+    
 </head>
-<body>
+<body id="top">
     
     <header>
         
-        <a href="index.html">
-            <img href="index.html" src="images/logo.svg" alt="logo" class="logo">
-        </a>
+        <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo"></a>
         
         <a href="#nav" class="nav-btn" data-state="inactive">Navigate</a>
+        
+        <a href="#top"><img src="images/return.svg" alt="return-to-top" class="rtt"></a>
         
     </header>
     
     <nav class="nav-top">	
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="company.html">Company</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="company.html#anchor">Contact Us</a></li>
         </ul>
     </nav>
     
-    <h1 class="billboard">COMPANY</h1>
+    <h1 class="companybb">COMPANY</h1>
     <article>
         
         <h3>Our Story</h3>
@@ -39,7 +41,7 @@
     
         </div>
         
-        
+        <div class="space" id="anchor"></div>
         
         <h3>The Team</h3>
         <ul class="theteam">
@@ -75,40 +77,29 @@
     </article>
     <footer>
         
-            <ul class="socialmedia">
-                <li>
-                    <a href="http://www.facebook.com/ccmadrid" class="facebook"></a>
-                </li>
-                <li>
-                    <a href="http://www.twitter.com/thatkidmadrid" class="twitter"></a>
-                </li>
-                <li>
-                    <a href="http://www.instagram.com/kidmadrid" class="instagram"></a>
-                </li>
-                <li>
-                    <a href="http://plus.google.com/101550079666435394886/posts" class="google"></a>
-                </li>
-            </ul>
-        
-    
-    <nav class="sitemap">
-        <ul>
-            <li><a href="company.html">Company</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="company.html">Contact Us</a></li>
+        <ul class="socialmedia">
+            <li><a href="http://www.facebook.com/ccmadrid" class="facebook"></a></li>
+            <li><a href="http://www.twitter.com/thatkidmadrid" class="twitter"></a></li>
+            <li><a href="http://www.instagram.com/kidmadrid" class="instagram"></a></li>
+            <li><a href="http://www.google.ca/#q=kidmadrid" class="google"></a></li>
         </ul>
-    </nav>
     
+        <nav class="sitemap">
+            <ul>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="company.html#anchor">Contact Us</a></li>
+            </ul>
+        </nav>
     
-    <div class="copyright">
-        <p>©2014 Kidmadrid</p>
-    </div>
-        
-    <a href="#" class="button"></a>
-        
+        <div class="copyright">
+            <p>©2014 Kidmadrid</p>
+        </div>
+    
     </footer>
     
     <script src="js/toggle.js"></script>
+    <script src="js/returntop.js"></script>
     
 </body>
 </html>
