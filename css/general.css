@@ -431,7 +431,10 @@ margin: 0 5% 1rem;
 }
 
 .v1 img, .v2 img, .v3 img {
-    width:100%;
+    width:auto;
+    height:100%;
+    display:block;
+    margin: 0 auto;
 }
 
 .description {
