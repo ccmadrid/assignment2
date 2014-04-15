@@ -5,7 +5,7 @@ document.querySelector('.nav-btn').addEventListener('click', function (e) {
 
   e.preventDefault();
 
-  if (navTop.getAttribute('data-state') == 'expanded') {
+  if (navTop.getAttribute('data-state'),logo.getAttribute('data-state') == 'expanded') {
     navTop.setAttribute('data-state', 'collapsed');
     this.setAttribute('data-state', 'inactive');
   } else {
