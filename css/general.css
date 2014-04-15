@@ -24,8 +24,12 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 3rem 0 0;
     background-color: #f3f4f4;
+}
+
+article {
+    padding: 0;
 }
 
 header {
@@ -125,8 +129,8 @@ header {
 }
 
 .homebb, .productsbb, .companybb, .billboard{
-    margin: 3rem 0 1rem;
-    padding: 7.5rem 5% 0;
+    margin: 0 0 1rem;
+    padding: 7rem 5% 0;
     height: 13rem;
     width: 100%;
     
@@ -148,12 +152,15 @@ h2 {
 
 .buckets {
     margin: 0 0 1rem;
-    padding: 0;
+    padding: 0 5%;
+    overflow: hidden;
+    
 }
 
 .buckets li {
-    padding: 5.5rem 0 0
+    padding: 0;
     background-position: center;
+    margin: 0 0 1rem;
     overflow: hidden;
     background-repeat: no-repeat;
     background-color: white;
@@ -163,67 +170,44 @@ h2 {
     -2px 2px 0 #FFF,
      2px 2px 0 #FFF;
     border-radius: 1.5rem;
-    display: inline-block;
     box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.05);
+    font-size: 1.25rem;
 }
 
-/*
 .buckets li:first-child {
-    
-}
-*/
-
-
-.featured {
-    margin: 0 5% 1rem;
-    width: 90%;
     height: 22rem;
     background-image: url(../images/featured.jpg);
     background-size: contain;
     background-position: center;
+    padding: 19rem 0 0;
 }
 
-.featured h2{
-    height: 22rem;c
-    width: 100%;
-    border-radius: 1.5rem;
-    padding: 19rem 0 0 0;
-}
-
-.company {
+.buckets li:nth-child(2) {
     float:left;
-    margin: 0 0 0 5%;
+    width: 47.5%;
+    margin: 0 5% 0 0;
     background-image: url(../images/mascot.svg);
     background-size: 45%;
-    display: inline;
+    padding: 6.5rem 0 0;
 }
 
-.products {
-    margin: 0 5% 0 5%;
+.buckets li:nth-child(3) {
     background-image: url(../images/products.jpg);
     background-size: cover;
-    display: inline;
-    
+    padding: 6.5rem 0 0;
 }
-.v2, .v3, .company, .products {
-    width: 42.5%;
+
+.v2, .v3, .buckets li:nth-child(2), .buckets li:nth-child(3) {
     height: 10rem;
     background-position: center;
 }
 
-.company h2, .products h2{
-    height: 10rem;
-    width: 100%;
-    border-radius: 1.5rem;
-    padding: 6.75rem 0 0 0;
-}
-
 }
 .buckets a,
-a:link,
-a:visited {
-    
+.buckets a:link,
+.buckets a:visited {
 }
+
 a,
 a:link,
 a:visited {
@@ -249,7 +233,7 @@ footer {
     padding: 0;
     height: 5rem;
     width: 100%;
-     text-align: center;
+    text-align: center;
 }
 
 .socialmedia li{
@@ -334,8 +318,8 @@ h3 {
 
 .about img{
     margin: 0 5% 0 0;
+    height: 100%;
     width: 45%;
-    height: auto;
     display: inline-block;
     overflow: hidden;
     float: right;
@@ -353,8 +337,9 @@ h3 {
     background-color:#00bef2;
     width: 75%;
     border-radius: 4rem;
-    
     position: relative;
+    box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.075);
+    
     
 }
 
