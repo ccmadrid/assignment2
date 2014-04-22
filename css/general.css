@@ -154,8 +154,6 @@ a:visited {
     box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
 }
 
-/*HOME PAGE SPECIFIC ELEMENTS*/
-
 .homebb {
     background-image: url(../images/billboard.jpg);
     background-size: 110%;
@@ -238,7 +236,7 @@ h2 {
     margin: 0 5% 0 0;
     height: 90%;
     background-image: url(../images/mascot.svg);
-    background-size: 45%;
+    background-size: 70%;
     overflow: hidden;
     padding: 0;
 }
@@ -339,10 +337,6 @@ h3 {
     font-size: 2rem;
 }
 
-
-.contact {
-    padding: 3rem 0 0;
-}
 .about{
     margin: 0;
     padding: 0;
@@ -350,19 +344,23 @@ h3 {
 }
 
 .about p{
-    margin: 1rem 0 1rem 5%;
+    margin: auto 0 auto 5%;
     line-height: 1.5rem;
     width: 45%;
     float: left;
 }
 
 .about img{
-    margin: 0 5% 0 0;
-    height: 100%;
-    width: 45%;
-    display: inline-block;
+    position: absoulte;
+    margin: 0 10% 0 0;
+    height: auto;
+    width: 35%;
     overflow: hidden;
     float: right;
+}
+
+.contact {
+    padding: 3rem 0 0;
 }
 
 .theteam {
@@ -376,14 +374,15 @@ h3 {
     margin: 0.5rem 0;
     overflow: hidden;
     background-color: #00bef2;
-    width: 75%;
+    width: 80%;
     border-radius: 4rem;
     position: relative;
     box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.075);
+    z-index: -10;
 }
 
 .employee2 {
-    left: 25%;
+    left: 20%;
 }
 
 .employee p,
@@ -392,7 +391,9 @@ h3 {
     color: white;
 }
 
-.emp1, .emp2, .emp3 {
+.emp1,
+.emp2,
+.emp3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -407,11 +408,11 @@ h3 {
 }
 
 .emp2 {
-    background-image: url(../images/headshot.png);
+    background-image: url(../images/headshot.jpg);
 }
 
 .emp3 {
-    background-image: url(../images/companion.jpg);
+    background-image: url(../images/photographer.jpg);
 }
 
 .merch, .m1 {
@@ -424,7 +425,8 @@ h3 {
     padding: 0rem 5% 0;
 }
 
-.merch li, .m1 li {
+.merch li,
+.m1 li {
     margin: 0 0 1rem;
     overflow: hidden;
     background-color: white;
@@ -433,18 +435,21 @@ h3 {
     width: 47.5%;
 }
 
-
-.merch li:first-child, .m1 li:first-child {
+.merch li:first-child,
+.m1 li:first-child {
     width: 100%;
 }
 
-.merch li:nth-child(2), .m1 li:nth-child(2) {
+.merch li:nth-child(2),
+.m1 li:nth-child(2) {
     float: left;
     margin: 0 5% 0 0;
 }
 
 .merch img, .m1 img{
+    display: block;
     width: 100%;
+    margin: 0 auto;
 }
 
 .description {
