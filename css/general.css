@@ -232,7 +232,6 @@ h2 {
     background-position: center;
 }
 
-}
 .buckets a,
 .buckets a:link,
 .buckets a:visited {
@@ -401,7 +400,7 @@ h3 {
     padding: 0;
 }
 .merch li {
-    padding: 5.5rem 0 0
+    padding: 5.5rem 0 0;
     background-position: center;
     overflow: hidden;
     background-repeat: no-repeat;
